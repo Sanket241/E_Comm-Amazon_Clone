@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Newnav.css'
 const Newnav = () => {
     return (
         <div className="new_nav">
