@@ -6,6 +6,7 @@ import Newnav from './component/newnav/Newnav';
 import { Route, Routes } from 'react-router-dom';
 import Signup from './component/signup_signin/Signup';
 import Signin from './component/signup_signin/Signin';
+import Cart from './component/cart/Cart';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<MainComp />} />
         <Route path='/register' element={<Signup />} />
         <Route path='/login' element={<Signin />} />
+        <Route path='/getproductsone/:id' element={<Cart />} />
 
       </Routes>
       <Footer />
