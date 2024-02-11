@@ -1,7 +1,8 @@
-const getproducts = (req, resp) => {
+const Products = require('../models/ProductSchema')
+const getproducts = async (req, resp) => {
     try {
-        console.log("getproducts")
-        resp.status(200).json({ msg: "shri ganesh" })
+        const response = await Products.find({})
+        resp.status(200).json({ response })
     } catch (error) {
         console.log(error)
     }
